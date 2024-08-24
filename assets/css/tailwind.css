@@ -1,0 +1,111 @@
+/* estedad */
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Thin.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-ExtraLight.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Light.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Regular.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Medium.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-SemiBold.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Bold.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-ExtraBold.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad";
+  src: url("../fonts/estedad/woff2/Estedad-Black.woff2") format("woff2"),
+    url("../fonts/estedad/ttf/Estedad-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-style {
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  @media only screen and (min-width: 1024px) {
+    .clip-style {
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    .clip-style {
+      clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
