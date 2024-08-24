@@ -12,7 +12,7 @@
                     <NuxtLink>صفحه اصلی</NuxtLink>
                     <NuxtLink>بلاگ</NuxtLink>
                     <NuxtLink>درباره ما</NuxtLink>
-                    <NuxtLink>تماس با ما</NuxtLink>
+                    <NuxtLink to="/connect-us">تماس با ما</NuxtLink>
                     <NuxtLink>دانلود اپلیکیشن</NuxtLink>
                     <span class="flex items-center gap-2">
                         آگهی ها
